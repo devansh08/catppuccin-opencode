@@ -44,6 +44,12 @@
 3. Select the theme from the `switch theme` menu.
 4. Enjoy!
 
+## 🙋 FAQ
+
+- Q: **_"What terminal is used in the screenshots?"_**\
+  A: Kitty terminal with the Catppuccin theme.s
+
+
 ## 💝 Thanks to
 
 - [Scarce Koi](https://github.com/scarcekoi)
