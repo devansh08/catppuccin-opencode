@@ -41,7 +41,8 @@
 
 1. Download the file of your choice from [`themes/<flavor>`](themes).
 2. Place the downloaded file in `~/.config/opencode/themes`.
-3. Enjoy!
+3. Select the theme from the `switch theme` menu.
+4. Enjoy!
 
 ## 💝 Thanks to
 
