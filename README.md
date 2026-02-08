@@ -37,7 +37,7 @@
 ## Usage
 
 > [!NOTE]
-> OpenCode already has support for Catppuccin themes, but not accents or Latte.
+> OpenCode already has Catppuccin themes, just not different accent support.
 
 1. Download the file of your choice from [`themes/<flavor>`](themes).
 2. Place the downloaded file in `~/.config/opencode/themes`.
