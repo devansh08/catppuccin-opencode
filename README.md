@@ -47,7 +47,7 @@
 ## 🙋 FAQ
 
 - Q: **_"What terminal is used in the screenshots?"_**\
-  A: [Kitty terminal](https://github.com/kovidgoyal/kitty) with the [Catppuccin Mocha theme](https://github.com/catppuccin/kitty).
+  A: [Kitty](https://github.com/kovidgoyal/kitty)
 
 
 ## 💝 Thanks to
