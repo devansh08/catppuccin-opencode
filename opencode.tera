@@ -1,42 +1,43 @@
 ---
 whiskers:
-  version: "^2.5.1"
+  version: "^2.7.0"
   matrix:
     - flavor
     - accent
-  filename: "themes/{{flavor.identifier}}/catppuccin-{{flavor.identifier}}-{{accent}}.json"
-  hex_format: "#{{r}}{{g}}{{b}}"
+  filename: "themes/{{ flavor.identifier }}/catppuccin-{{ flavor.identifier }}-{{ accent }}.json"
+  hex_format: "#{{r}}{{g}}{{b}}{{z}}"
 ---
+{%- set accent = flavor.colors[accent] -%}
 {
   "$schema": "https://opencode.ai/theme.json",
   "defs": {
-    "macAccent": "{{flavor.colors[accent].hex}}",
-    "macRosewater": "{{flamingo.hex}}",
-    "macFlamingo": "{{flamingo.hex}}",
-    "macPink": "{{pink.hex}}",
-    "macMauve": "{{mauve.hex}}",
-    "macRed": "{{red.hex}}",
-    "macMaroon": "{{maroon.hex}}",
-    "macPeach": "{{peach.hex}}",
-    "macYellow": "{{yellow.hex}}",
-    "macGreen": "{{green.hex}}",
-    "macTeal": "{{teal.hex}}",
-    "macSky": "{{sky.hex}}",
-    "macSapphire": "{{sapphire.hex}}",
-    "macBlue": "{{blue.hex}}",
-    "macLavender": "{{lavender.hex}}",
-    "macText": "{{text.hex}}",
-    "macSubtext1": "{{subtext1.hex}}",
-    "macSubtext0": "{{subtext0.hex}}",
-    "macOverlay2": "{{overlay2.hex}}",
-    "macOverlay1": "{{overlay1.hex}}",
-    "macOverlay0": "{{overlay0.hex}}",
-    "macSurface2": "{{surface2.hex}}",
-    "macSurface1": "{{surface1.hex}}",
-    "macSurface0": "{{surface0.hex}}",
-    "macBase": "{{base.hex}}",
-    "macMantle": "{{mantle.hex}}",
-    "macCrust": "{{crust.hex}}"
+    "macAccent": "{{ accent.hex }}",
+    "macRosewater": "{{ flamingo.hex }}",
+    "macFlamingo": "{{ flamingo.hex }}",
+    "macPink": "{{ pink.hex }}",
+    "macMauve": "{{ mauve.hex }}",
+    "macRed": "{{ red.hex }}",
+    "macMaroon": "{{ maroon.hex }}",
+    "macPeach": "{{ peach.hex }}",
+    "macYellow": "{{ yellow.hex }}",
+    "macGreen": "{{ green.hex }}",
+    "macTeal": "{{ teal.hex }}",
+    "macSky": "{{ sky.hex }}",
+    "macSapphire": "{{ sapphire.hex }}",
+    "macBlue": "{{ blue.hex }}",
+    "macLavender": "{{ lavender.hex }}",
+    "macText": "{{ text.hex }}",
+    "macSubtext1": "{{ subtext1.hex }}",
+    "macSubtext0": "{{ subtext0.hex }}",
+    "macOverlay2": "{{ overlay2.hex }}",
+    "macOverlay1": "{{ overlay1.hex }}",
+    "macOverlay0": "{{ overlay0.hex }}",
+    "macSurface2": "{{ surface2.hex }}",
+    "macSurface1": "{{ surface1.hex }}",
+    "macSurface0": "{{ surface0.hex }}",
+    "macBase": "{{ base.hex }}",
+    "macMantle": "{{ mantle.hex }}",
+    "macCrust": "{{ crust.hex }}"
   },
   "theme": {
     "primary": {
@@ -124,12 +125,12 @@ whiskers:
       "light": "macRed"
     },
     "diffAddedBg": {
-      "dark": "{{green.hex}}80",
-      "light": "{{green.hex}}80"
+      "dark": "{{ green | mod(opacity=0.5) | hex }}",
+      "light": "{{ green | mod(opacity=0.5) | hex }}"
     },
     "diffRemovedBg": {
-      "dark": "{{red.hex}}80",
-      "light": "{{red.hex}}80"
+      "dark": "{{ red | mod(opacity=0.5) | hex }}",
+      "light": "{{ red | mod(opacity=0.5) | hex }}"
     },
     "diffContextBg": {
       "dark": "macMantle",
@@ -140,12 +141,12 @@ whiskers:
       "light": "macSurface1"
     },
     "diffAddedLineNumberBg": {
-      "dark": "{{green.hex}}40",
-      "light": "{{green.hex}}40"
+      "dark": "{{ green | mod(opacity=0.25) | hex }}",
+      "light": "{{ green | mod(opacity=0.25) | hex }}"
     },
     "diffRemovedLineNumberBg": {
-      "dark": "{{red.hex}}40",
-      "light": "{{red.hex}}40"
+      "dark": "{{ red | mod(opacity=0.25) | hex }}",
+      "light": "{{ red | mod(opacity=0.25) | hex }}"
     },
     "markdownText": {
       "dark": "macText",
