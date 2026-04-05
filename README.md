@@ -37,9 +37,9 @@
 ## Usage
 
 > [!NOTE]
-> OpenCode already has Catppuccin themes, just not different accent support.
+> Catppuccin is built-in to OpenCode, but this repository also provides support for different accents.
 
-1. Download the file of your choice from [`themes/<flavor>`](themes).
+1. Download the file of your choice from [`themes`](themes).
 2. Place the downloaded file in `~/.config/opencode/themes`.
 3. Select the theme from the `switch theme` menu.
 4. Enjoy!
