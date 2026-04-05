@@ -44,12 +44,6 @@
 3. Select the theme from the `switch theme` menu.
 4. Enjoy!
 
-## 🙋 FAQ
-
-- Q: **_"What terminal is used in the screenshots?"_**\
-  A: [Kitty](https://github.com/kovidgoyal/kitty)
-
-
 ## 💝 Thanks to
 
 - [Scarce Koi](https://github.com/scarcekoi)
